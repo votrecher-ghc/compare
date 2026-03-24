@@ -35,10 +35,6 @@ calculate_and_plot_all_skyplot(obs_data, nav_data);
 [obs_aligned, step1_aligned] = gesture_analysis_align_duration(obs_waveform, step1_res_shaped);
 % plot_sn(obs_aligned);
 
-
 %%
 run_gesture_analysis_continuous_track(obs_waveform, nav_data, step1_res_shaped);
-run_gesture_analysis_continuous_track_line(obs_aligned, nav_data, step1_aligned);
 run_gesture_analysis_boundary_trackV3(obs_waveform, nav_data, step1_res_shaped);
-%%
-run_gesture_analysis_physics_engine(obs_waveform, nav_data, step1_res_shaped);
